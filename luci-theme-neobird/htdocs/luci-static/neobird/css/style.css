@@ -1118,9 +1118,6 @@ fieldset > table > tbody > tr:nth-of-type(odd) {
     color: var(--progressbartxtColor) !important;
 }
 
-.cbi-value-field {
-    width: 65%;
-}
 /* fix node-system-admin */
 .node-system-admin .cbi-value-field li div {
     padding: 0 !important;
@@ -1188,10 +1185,6 @@ td > table > tbody > tr > td {
 
 div#container\.nlbw\.traffic {
     overflow: auto;
-}
-
-td#__status-ifc-signal {
-    width: 60px !important;
 }
 
 td#__status-ifc-signal img[src*="/luci-static/resources/icons/bridge.png"] {
@@ -2587,4 +2580,64 @@ body.lang_pl.node-main-login .cbi-value-title {
     #cbi-vssr-servers .cbi-page-actions {
         padding-bottom: 10px !important;
     }
+}
+
+
+
+
+/* QI-修改 */
+img[src*="/luci-static/resources/icons/tunnel.png"] {
+    background-image: url(../images/tunnel.png);
+    /*background-size: 32px 32px;*/
+    height: 32px;
+    width: 32px;
+    padding: 0 0 0 32px;
+    width: 0;
+}
+
+
+.ifacebadge img[src*="/luci-static/resources/icons/tunnel.png"]
+ {
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+    padding: 0 0 0 16px;
+}
+
+
+td#__status-ifc-signal img[src*="/luci-static/resources/icons/tunnel.png"] {
+    background-image: url(../images/tunnel.png);
+    background-size: 32px 32px;
+    height: 32px !important;
+    width: 32px !important;
+    padding: 0 0 0 32px;
+    width: 0;
+}
+
+/*.cbi-value-field {
+    width: 65%;
+}*/
+
+
+td#__status-ifc-signal {
+    width: 60px !important;
+}
+
+#cbi-network-wan-ifname_single img[src*="/luci-static/resources/icons/ethernet.png"],
+#cbi-network-wan-ifname_single img[src*="/luci-static/resources/icons/ethernet_disabled.png"]
+ {
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+    padding: 0 0 0 16px;
+}
+ {
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+    padding: 0 0 0 16px;
+}
+
+.cbi-section-table td {
+    padding: 0px !important;
 }

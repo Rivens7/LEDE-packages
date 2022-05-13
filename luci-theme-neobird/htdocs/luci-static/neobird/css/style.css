@@ -2638,6 +2638,7 @@ td#__status-ifc-signal {
     padding: 0 0 0 16px;
 }
 
-.cbi-section-table td {
-    padding: 0px !important;
+#cbi-network-wan-__status table td {
+    width: 0;
+    padding: 0;
 }

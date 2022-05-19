@@ -1118,6 +1118,9 @@ fieldset > table > tbody > tr:nth-of-type(odd) {
     color: var(--progressbartxtColor) !important;
 }
 
+.cbi-value-field {
+    width: 65%;
+}
 /* fix node-system-admin */
 .node-system-admin .cbi-value-field li div {
     padding: 0 !important;
@@ -1185,6 +1188,10 @@ td > table > tbody > tr > td {
 
 div#container\.nlbw\.traffic {
     overflow: auto;
+}
+
+td#__status-ifc-signal {
+    width: 60px !important;
 }
 
 td#__status-ifc-signal img[src*="/luci-static/resources/icons/bridge.png"] {
@@ -2582,29 +2589,7 @@ body.lang_pl.node-main-login .cbi-value-title {
     }
 }
 
-
-
-
 /* QI-修改 */
-img[src*="/luci-static/resources/icons/tunnel.png"] {
-    background-image: url(../images/tunnel.png);
-    /*background-size: 32px 32px;*/
-    height: 32px;
-    width: 32px;
-    padding: 0 0 0 32px;
-    width: 0;
-}
-
-
-.ifacebadge img[src*="/luci-static/resources/icons/tunnel.png"]
- {
-    background-size: 16px 16px;
-    height: 16px;
-    width: 16px;
-    padding: 0 0 0 16px;
-}
-
-
 td#__status-ifc-signal img[src*="/luci-static/resources/icons/tunnel.png"] {
     background-image: url(../images/tunnel.png);
     background-size: 32px 32px;
@@ -2614,25 +2599,27 @@ td#__status-ifc-signal img[src*="/luci-static/resources/icons/tunnel.png"] {
     width: 0;
 }
 
-/*.cbi-value-field {
-    width: 65%;
-}*/
-
-
-td#__status-ifc-signal {
-    width: 60px !important;
-}
-
-#cbi-network-wan-ifname_single img[src*="/luci-static/resources/icons/ethernet.png"],
-#cbi-network-wan-ifname_single img[src*="/luci-static/resources/icons/ethernet_disabled.png"]
- {
-    background-size: 16px 16px;
-    height: 16px;
-    width: 16px;
-    padding: 0 0 0 16px;
+img[src*="/luci-static/resources/icons/tunnel.png"] {
+    background-image: url(../images/tunnel.png);
+    /*background-size: 32px 32px;*/
+    height: 32px;
+    width: 32px;
+    padding: 0 0 0 32px;
+    width: 0;
 }
 
 #cbi-network-wan-__status table td {
     width: 0;
     padding: 0;
+}
+
+#cbi-network-wan-__status table {
+    width: auto;
+}
+
+#cbi-network-lan-ifname_multi img[src*="/luci-static/resources/icons/ethernet.png"], #cbi-network-1-_ifname img[src*="/luci-static/resources/icons/ethernet.png"], .ifacebadge img[src*="/luci-static/resources/icons/ethernet.png"] {
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+    padding: 0 0 0 16px;
 }
